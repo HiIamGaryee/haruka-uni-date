@@ -1,0 +1,1855 @@
+HARUKA UNI DATE — VISUAL ASSET BRIEF v1
+Creative Director / Asset Lead Inventory
+Generated from full project scan: marketing site, member flow, match engine UI, admin dashboard, cosmic overlays, demo pages.
+
+Design north star: Apple keynote × Arc Browser × Linear × Hinge × Spotify Wrapped × techhackathon.com
+Palette anchors: #09090b bg, #eab308 accent gold, #f43f5e rose, #a78bfa violet, glassmorphism, premium dark romance.
+
+Total assets listed: 45
+
+================================================================================
+
+ASSET-01
+
+FILE NAME:
+bg_hero_university_night.png
+
+FOLDER:
+src/assets/backgrounds/
+
+USED IN:
+Hero.tsx, PageShell.tsx (optional layered behind GradientBlobs)
+
+DESCRIPTION:
+Premium night university campus with warm window lights, modern glass buildings, subtle walkway lamps, distant student silhouettes, dreamy star field. Left-weighted scene with open negative space on right for headline and stats card.
+
+VISUAL STYLE:
+Apple keynote hero × romantic startup landing. Soft cinematic depth, not cartoon.
+
+COLOR THEME:
+Deep black-green sky, warm gold window glow, mint accent highlights, soft violet haze on horizon.
+
+OBJECT DETAILS:
+2–3 campus buildings, palm or tropical trees (Malaysia), lamp posts, 4–6 tiny walking silhouettes, faint constellation dots.
+
+COMPOSITION:
+Subject cluster left 60%; right 40% intentionally empty for text overlay.
+
+ASPECT RATIO:
+16:9 (desktop), export 2400×1350 master
+
+TRANSPARENT BACKGROUND:
+No
+
+ANIMATION SUGGESTION:
+Slow parallax on scroll (background moves 8% slower than foreground).
+
+PRIORITY:
+P0
+
+---
+
+ASSET-02
+
+FILE NAME:
+bg_section_noise_gradient.png
+
+FOLDER:
+src/assets/patterns/
+
+USED IN:
+Section.tsx, PageShell.tsx, all marketing sections as subtle full-bleed texture
+
+DESCRIPTION:
+Ultra-subtle film grain + soft radial vignette texture tileable for dark UI sections. Adds premium tactility without competing with content.
+
+VISUAL STYLE:
+Linear / Arc noise layer.
+
+COLOR THEME:
+Near-black #09090b with 3% white grain, faint gold center glow optional.
+
+OBJECT DETAILS:
+Pure texture, no objects.
+
+COMPOSITION:
+Seamless tile 512×512 or 1024×1024.
+
+ASPECT RATIO:
+1:1 tile
+
+TRANSPARENT BACKGROUND:
+No
+
+ANIMATION SUGGESTION:
+Static; optional 0.5% opacity drift via CSS only.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-03
+
+FILE NAME:
+pattern_dot_grid_gold.png
+
+FOLDER:
+src/assets/patterns/
+
+USED IN:
+ProblemSection.tsx, SolutionSection.tsx, HowMatchingWorks.tsx backgrounds
+
+DESCRIPTION:
+Faint gold dot grid on transparent dark field, evoking precision matching and data elegance.
+
+VISUAL STYLE:
+Linear grid × Notion subtle structure.
+
+COLOR THEME:
+Gold dots at 8% opacity on transparent.
+
+OBJECT DETAILS:
+Regular dot matrix, 24px spacing.
+
+COMPOSITION:
+Tileable pattern.
+
+ASPECT RATIO:
+1:1 tile
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+None or ultra-slow pan (20s loop).
+
+PRIORITY:
+P2
+
+---
+
+ASSET-04
+
+FILE NAME:
+overlay_glass_shimmer.png
+
+FOLDER:
+src/assets/patterns/
+
+USED IN:
+GlassCard.tsx, CTA.tsx, auth cards, planner-card surfaces
+
+DESCRIPTION:
+Diagonal glass shimmer highlight strip for glassmorphism cards — single soft white-gold streak.
+
+VISUAL STYLE:
+Apple glass panel reflection.
+
+COLOR THEME:
+White 12% → gold 6% gradient fade to transparent.
+
+OBJECT DETAILS:
+Abstract light band only.
+
+COMPOSITION:
+Diagonal top-left to bottom-right.
+
+ASPECT RATIO:
+4:3
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Slow shimmer sweep left-to-right on hover (CSS mask).
+
+PRIORITY:
+P1
+
+---
+
+ASSET-05
+
+FILE NAME:
+illus_problem_broken_swipe.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+ProblemSection.tsx
+
+DESCRIPTION:
+Illustration of chaotic swipe cards flying off-screen, exhausted student silhouette, metaphor for broken campus dating apps. Privacy-crossed-out icon subtle in corner.
+
+VISUAL STYLE:
+Refined line-art + soft gradient fill, not flat emoji.
+
+COLOR THEME:
+Muted zinc, rose warning accents, no bright carnival colors.
+
+OBJECT DETAILS:
+Phone outline, swipe cards, tired face, crossed randomness symbol.
+
+COMPOSITION:
+Centered illustration with breathing room, works at 480px wide.
+
+ASPECT RATIO:
+4:3
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Cards drift slightly on scroll reveal.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-06
+
+FILE NAME:
+illus_solution_privacy_match.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+SolutionSection.tsx
+
+DESCRIPTION:
+Single glowing match card emerging from sealed envelope / vault — one partner only, no grid of faces. Conveys privacy-first AI matching.
+
+VISUAL STYLE:
+Hinge premium × Apple privacy campaign.
+
+COLOR THEME:
+Gold seal, violet glow, dark surround.
+
+OBJECT DETAILS:
+Vault door ajar, one profile card, lock icon, spark particles.
+
+COMPOSITION:
+Vertical card centered, glow behind.
+
+ASPECT RATIO:
+3:4
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Vault opens 10° on section enter.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-07
+
+FILE NAME:
+illus_how_matching_four_steps.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+HowMatchingWorks.tsx
+
+DESCRIPTION:
+Four-step horizontal infographic: profile → AI scan → private match → date plan. Minimal icons connected by gold thread.
+
+VISUAL STYLE:
+Notion diagram × Apple WWDC slide.
+
+COLOR THEME:
+Gold connectors, white icons, violet step badges.
+
+OBJECT DETAILS:
+4 numbered nodes, icons for form, brain, heart-lock, calendar.
+
+COMPOSITION:
+Wide horizontal strip.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Steps illuminate sequentially on scroll.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-08
+
+FILE NAME:
+illus_demo_flow_product_journey.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+DemoFlowSection.tsx, DemoFlowStepCard.tsx
+
+DESCRIPTION:
+Isometric mini product journey: signup → profile → match animation → reveal screen. Feels like app walkthrough still.
+
+VISUAL STYLE:
+Arc Browser isometric × Stripe product illustrations.
+
+COLOR THEME:
+Dark surfaces, gold CTAs, rose match moment.
+
+OBJECT DETAILS:
+4 floating UI panels in perspective.
+
+COMPOSITION:
+Isometric cluster, bottom shadow.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Panels float with staggered Y bob.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-09
+
+FILE NAME:
+illus_ai_match_engine_core.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchScoreEngine.tsx, MatchingCinematicSection.tsx
+
+DESCRIPTION:
+Abstract AI match engine: concentric rings, orbiting signal nodes, central heart-core at 94%. Represents 7-signal compatibility scoring.
+
+VISUAL STYLE:
+Spotify Wrapped data art × sci-fi premium.
+
+COLOR THEME:
+Gold core, rose orbit paths, violet outer ring.
+
+OBJECT DETAILS:
+7 nodes labeled subtly (uni, interests, lifestyle, etc.) as dots not text.
+
+COMPOSITION:
+Radial symmetry, center weighted.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Rings rotate at different speeds; export static + optional Lottie later.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-10
+
+FILE NAME:
+illus_compatibility_dna_helix.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+CompatibilityDNASection.tsx, DNAHelix.tsx (replace or enhance CSS helix)
+
+DESCRIPTION:
+Premium double-helix with gold rungs and rose-violet strands, interest chips merging at center. Marketing version of DNA match visualization.
+
+VISUAL STYLE:
+Medical-tech elegance × dating warmth.
+
+COLOR THEME:
+Gold rungs, gradient rose→violet strands.
+
+OBJECT DETAILS:
+DNA ladder, 8–12 rungs, floating chip placeholders on sides.
+
+COMPOSITION:
+Vertical helix centered.
+
+ASPECT RATIO:
+9:16
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Slow rotation 360° / 24s; prime candidate for Lottie.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-11
+
+FILE NAME:
+illus_universe_alignment_constellation.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+UniverseAlignmentSection.tsx, UniverseAlignmentCanvas.tsx
+
+DESCRIPTION:
+Two star constellations drawing a heart line between them — soulmate orbit metaphor. Malaysian night sky subtle.
+
+VISUAL STYLE:
+Cosmic celebration overlay aesthetic, refined not childish.
+
+COLOR THEME:
+Deep navy, gold stars, rose connection line, soft blue nebula.
+
+OBJECT DETAILS:
+2 constellation figures, heart bridge, 30–40 stars, faint nebula wash.
+
+COMPOSITION:
+Wide panoramic sky.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes (nebula can be soft edge fade)
+
+ANIMATION SUGGESTION:
+Stars twinkle; constellation lines draw on scroll.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-12
+
+FILE NAME:
+illus_product_preview_campus_cards.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+ProductPreview.tsx, StudentMatchPreview.tsx (demo label area)
+
+DESCRIPTION:
+Floating stack of 3 demo profile cards (Haruka, Mei, Yuna) with "Demo only" ribbon — matches marketing demo profiles, not real users.
+
+VISUAL STYLE:
+Hinge card stack × Apple product shot.
+
+COLOR THEME:
+Card accents violet/emerald/rose per demo persona.
+
+OBJECT DETAILS:
+3 cards angled, compatibility %, course line, demo badge.
+
+COMPOSITION:
+3-card fan, center card largest.
+
+ASPECT RATIO:
+4:3
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Cards fan open on scroll.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-13
+
+FILE NAME:
+illus_future_memories_polaroid.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+FutureMemoriesSection.tsx, MemoryCard.tsx (replace emoji-led cards)
+
+DESCRIPTION:
+Set of 3 polaroid-style memory frames: first café laugh, campus walk, goodbye wave. Nostalgic but premium dark-mode treatment.
+
+VISUAL STYLE:
+Spotify Wrapped memory cards × film grain.
+
+COLOR THEME:
+Warm sepia highlights on dark borders, gold date stamps.
+
+OBJECT DETAILS:
+3 polaroids, handwritten-style captions optional as separate layer.
+
+COMPOSITION:
+Scattered polaroid pile, slight rotations.
+
+ASPECT RATIO:
+16:9 group
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Float + gentle rotate loop per card.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-14
+
+FILE NAME:
+illus_cta_start_matching.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+CTA.tsx, HomePage closing section
+
+DESCRIPTION:
+Student closing laptop, standing up with confident smile, city campus lights behind — "ready to trust the AI" emotional beat.
+
+VISUAL STYLE:
+Apple lifestyle × startup optimism.
+
+COLOR THEME:
+Gold backlight rim, dark silhouette, violet city bokeh.
+
+OBJECT DETAILS:
+1 figure, backpack, phone in hand, bokeh campus.
+
+COMPOSITION:
+Figure right third, text space left.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+No (soft gradient fade edges OK)
+
+ANIMATION SUGGESTION:
+Subtle scale-in on scroll.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-15
+
+FILE NAME:
+illus_find_match_overlay_scan.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+FindMatchOverlay.tsx, FindMatchButton.tsx trigger state
+
+DESCRIPTION:
+Radar scan circle over abstract student network — nodes light up but no faces shown (privacy). Central pulsing heart at 94%.
+
+VISUAL STYLE:
+Mission control × dating mystery.
+
+COLOR THEME:
+Gold scan ring, rose pulse, dark grid.
+
+OBJECT DETAILS:
+Circular radar, 12 anonymous nodes, lock shield watermark.
+
+COMPOSITION:
+Circular focal, full square canvas.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Radar sweep rotation; export as Lottie candidate.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-16
+
+FILE NAME:
+illus_cosmic_celebration_burst.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+CosmicCelebrationOverlay.tsx, CosmicCelebrateButton.tsx
+
+DESCRIPTION:
+Explosion of hearts, stars, and gold confetti forming 94% score halo — match found celebration hero art.
+
+VISUAL STYLE:
+Spotify Wrapped celebration × Apple event sparkle.
+
+COLOR THEME:
+Gold, rose, white sparkles on transparent.
+
+OBJECT DETAILS:
+Heart burst, star rays, % ring negative space in center.
+
+COMPOSITION:
+Radial burst from center.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Burst expand 0.6s ease-out; Lottie highly recommended.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-17
+
+FILE NAME:
+illus_partner_reveal_dual_profiles.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchResultPage.tsx (header area above score), CosmicCelebrationOverlay.tsx
+
+DESCRIPTION:
+Two profile pedestals facing each other with glowing compatibility bridge — "Your Profile" vs "Your Match" without showing real photos (silhouette busts).
+
+VISUAL STYLE:
+Museum exhibit × premium reveal.
+
+COLOR THEME:
+Violet pedestal left (you), emerald right (match), gold bridge.
+
+OBJECT DETAILS:
+2 bust silhouettes, score arc overhead, privacy lock small icon.
+
+COMPOSITION:
+Symmetrical dual columns.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Bridge draws left-to-right on reveal.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-18
+
+FILE NAME:
+illus_date_plan_three_hour_timeline.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchResultPage.tsx date plan block, DateSchedulePicker.tsx
+
+DESCRIPTION:
+Visual timeline: meet → 2hr café → walk → goodbye across 3+ hours. Clock arc showing minimum duration.
+
+VISUAL STYLE:
+Apple Calendar × Hinge date plan elegance.
+
+COLOR THEME:
+Gold time markers, rose café segment (2hr highlight), mint walk segment.
+
+OBJECT DETAILS:
+4 nodes, coffee cup icon 2hr wide bar, clock badge "3h+".
+
+COMPOSITION:
+Horizontal timeline left-to-right.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Timeline fills progressively when schedule confirmed.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-19
+
+FILE NAME:
+illus_conversation_starters_bubbles.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchResultPage.tsx conversation starters, datePlanner/ConversationStarters.tsx
+
+DESCRIPTION:
+Floating chat bubbles with playful campus prompts (icons only, no long text baked in). Icebreaker energy.
+
+VISUAL STYLE:
+iMessage polish × gen-Z warmth.
+
+COLOR THEME:
+Dark glass bubbles, gold accent tails, violet icons.
+
+OBJECT DETAILS:
+5–6 speech bubbles, small icons (coffee, book, music).
+
+COMPOSITION:
+Cluster upper-left flowing down-right.
+
+ASPECT RATIO:
+4:3
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Bubbles pop-in stagger.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-20
+
+FILE NAME:
+illus_safety_public_meetup.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MeetupSafetyCard.tsx, datePlanner/SafetyLayer.tsx
+
+DESCRIPTION:
+Illustration of well-lit public café meetup: two figures at outdoor table, friend receiving WhatsApp location ping on phone inset.
+
+VISUAL STYLE:
+Trust & safety editorial illustration (Hinge safe dating).
+
+COLOR THEME:
+Warm café lights, green safety shield accent, gold WhatsApp-style pin (generic not branded).
+
+OBJECT DETAILS:
+Café terrace, 2 silhouettes, phone inset with map pin, shield badge.
+
+COMPOSITION:
+Scene lower two-thirds, shield upper right.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Shield gentle pulse; phone notification slide-in.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-21
+
+FILE NAME:
+illus_waiting_pool_mystery.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchPage.tsx waiting state, ProfilePage.tsx waiting copy, admin/AdminWaitingPage.tsx
+
+DESCRIPTION:
+Student sitting on campus bench at dusk, phone face-down, soft glowing "waiting pool" orb floating above — patient, mysterious, no other faces visible.
+
+VISUAL STYLE:
+Calm premium waiting room × indie film poster.
+
+COLOR THEME:
+Deep blue dusk, gold orb, violet mist.
+
+OBJECT DETAILS:
+1 figure, bench, glowing orb, campus path, fireflies.
+
+COMPOSITION:
+Figure left, orb right, wide negative space.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+No (soft sky gradient OK)
+
+ANIMATION SUGGESTION:
+Orb slow breathe scale 1.0–1.05.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-22
+
+FILE NAME:
+illus_no_match_yet.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchPage.tsx waiting state (alternate), empty match states
+
+DESCRIPTION:
+Empty constellation with one star still searching — "no 90%+ match yet" empathetic empty state. Not sad, hopeful.
+
+VISUAL STYLE:
+Minimal line art empty state (Linear style).
+
+COLOR THEME:
+Muted zinc, single gold star pulsing.
+
+OBJECT DETAILS:
+Incomplete constellation, telescope optional, soft copy area.
+
+COMPOSITION:
+Centered iconographic scene.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Single star twinkle loop.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-23
+
+FILE NAME:
+illus_match_engine_loading_particles.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchPage.tsx running phase, UserGuard.tsx loading, FindMatchOverlay.tsx phases
+
+DESCRIPTION:
+Particle field converging toward center — AI analyzing interests, lifestyle, comfort. No faces, only data points.
+
+VISUAL STYLE:
+Apple Intelligence particle aesthetic.
+
+COLOR THEME:
+Gold particles, violet trails, black center void.
+
+OBJECT DETAILS:
+80–120 dots, spiral inward motion implied.
+
+COMPOSITION:
+Square particle canvas.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+MP4 or Lottie loop 3s; critical for match loading UX.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-24
+
+FILE NAME:
+bg_auth_campus_blur.png
+
+FOLDER:
+src/assets/backgrounds/
+
+USED IN:
+AuthLayout.tsx (LoginPage, SignupPage)
+
+DESCRIPTION:
+Blurred bokeh campus walkway at golden hour — romantic but professional auth backdrop behind glass login card.
+
+VISUAL STYLE:
+Apple ID login blur × Hinge auth.
+
+COLOR THEME:
+Gold hour warmth, deep shadow blur, no readable faces.
+
+OBJECT DETAILS:
+Bokeh lights, pathway, tree shapes abstract.
+
+COMPOSITION:
+Full bleed background.
+
+ASPECT RATIO:
+16:9 (also crop 9:16 mobile)
+
+TRANSPARENT BACKGROUND:
+No
+
+ANIMATION SUGGESTION:
+Ultra-slow Ken Burns zoom 1.0→1.03.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-25
+
+FILE NAME:
+illus_create_profile_campus_form.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+CreateProfilePage.tsx header, SignupPage.tsx sidebar (desktop)
+
+DESCRIPTION:
+Friendly illustration of student filling profile: university dropdown, hobby icons, language chips — onboarding encouragement.
+
+VISUAL STYLE:
+Notion onboarding × Stripe setup.
+
+COLOR THEME:
+Gold accents on dark form mockup.
+
+OBJECT DETAILS:
+Form UI floating, Malaysia uni badge, hobby radio icons.
+
+COMPOSITION:
+Isometric form card angled.
+
+ASPECT RATIO:
+4:3
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Form fields highlight sequentially.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-26
+
+FILE NAME:
+avatar_placeholder_female_01.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+StudentMatchCard.tsx, MatchProfileCard.tsx, MatchResultPage ProfileCard, CosmicCelebrationOverlay.tsx
+
+DESCRIPTION:
+Premium illustrated female student avatar — Southeast Asian, soft smile, neutral campus sweater, not photo-realistic. Haruka persona direction.
+
+VISUAL STYLE:
+Hinge illustrated avatars × Apple Memoji premium.
+
+COLOR THEME:
+Violet gradient backdrop circle, warm skin tones, gold earring detail.
+
+OBJECT DETAILS:
+Head shoulders bust, subtle UI ring frame.
+
+COMPOSITION:
+Circular crop safe zone center.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Subtle idle blink loop optional (sprite sheet).
+
+PRIORITY:
+P0
+
+---
+
+ASSET-27
+
+FILE NAME:
+avatar_placeholder_female_02.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+Demo profiles (Mei Wong), StudentMatchPreview.tsx card 2
+
+DESCRIPTION:
+Female avatar variant — business casual, confident energy, analytics student vibe.
+
+VISUAL STYLE:
+Same family as ASSET-26.
+
+COLOR THEME:
+Emerald gradient ring.
+
+OBJECT DETAILS:
+Head shoulders, glasses optional, hair tied up.
+
+COMPOSITION:
+1:1 circular safe.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Static.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-28
+
+FILE NAME:
+avatar_placeholder_female_03.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+Demo profiles (Yuna Lim), StudentMatchPreview.tsx card 3
+
+DESCRIPTION:
+Female avatar variant — soft, psychology student energy, bookish warmth.
+
+VISUAL STYLE:
+Same avatar family.
+
+COLOR THEME:
+Rose gradient ring.
+
+OBJECT DETAILS:
+Head shoulders, cardigan, gentle expression.
+
+COMPOSITION:
+1:1 circular safe.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Static.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-29
+
+FILE NAME:
+avatar_placeholder_male_01.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+Demo profiles (Kai Lim), match partner reveal, matchingAnimation.ts Aiden direction
+
+DESCRIPTION:
+Male avatar — tech student, calm builder energy, campus hoodie.
+
+VISUAL STYLE:
+Matching set with female avatars.
+
+COLOR THEME:
+Blue-violet gradient ring.
+
+OBJECT DETAILS:
+Head shoulders, short hair, friendly neutral smile.
+
+COMPOSITION:
+1:1 circular safe.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Static.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-30
+
+FILE NAME:
+avatar_placeholder_neutral_01.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+CreateProfilePage gender-neutral option, ProfilePage.tsx default, generic fallbacks
+
+DESCRIPTION:
+Neutral / androgynous student avatar for inclusive fallback when gender not specified.
+
+VISUAL STYLE:
+Consistent illustrated set.
+
+COLOR THEME:
+Gold-neutral gradient ring.
+
+OBJECT DETAILS:
+Head shoulders, ambiguous styling, welcoming expression.
+
+COMPOSITION:
+1:1 circular safe.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Static.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-31
+
+FILE NAME:
+avatar_placeholder_silhouette_private.png
+
+FOLDER:
+src/assets/avatars/
+
+USED IN:
+MatchPage.tsx (during scan — no candidate faces), waiting pool UI, privacy marketing
+
+DESCRIPTION:
+Locked silhouette bust behind frosted glass — represents hidden candidates until match. Privacy-first iconography.
+
+VISUAL STYLE:
+Apple privacy silhouette.
+
+COLOR THEME:
+Frosted white 20%, lock gold icon overlay.
+
+OBJECT DETAILS:
+Generic bust, lock, question mark optional.
+
+COMPOSITION:
+1:1 icon.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Frost shimmer pass.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-32
+
+FILE NAME:
+icon_pack_haruka_custom_24.svg
+
+FOLDER:
+src/assets/icons/
+
+USED IN:
+Navbar.tsx (replace Heart lucide), FeatureGrid.tsx, Footer.tsx, favicon source
+
+DESCRIPTION:
+Custom Haruka mark: heart + campus gate + subtle star. Master SVG icon pack at 24px grid with variants (outline, filled, glow).
+
+VISUAL STYLE:
+Linear icon precision × romantic symbol.
+
+COLOR THEME:
+Gold primary, white secondary, single-color variants included.
+
+OBJECT DETAILS:
+Heart-gate monogram, 2px stroke, rounded caps.
+
+COMPOSITION:
+24×24, 48×48, 512×512 app icon export from same source.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+SVG stroke draw on load optional.
+
+PRIORITY:
+P0
+
+---
+
+ASSET-33
+
+FILE NAME:
+badge_demo_only_ribbon.png
+
+FOLDER:
+src/assets/decorations/
+
+USED IN:
+StudentMatchPreview.tsx "Demo profiles only" label, ProductPreview.tsx
+
+DESCRIPTION:
+Premium ribbon badge reading "Demo only" — gold border, dark fill, subtle stitch texture. Text baked OR separate layer version.
+
+VISUAL STYLE:
+Apple award ribbon × hackathon demo label.
+
+COLOR THEME:
+Gold border #eab308, dark fill, white text.
+
+OBJECT DETAILS:
+Ribbon fold ends, small star.
+
+COMPOSITION:
+Horizontal ribbon, works at 200–320px wide.
+
+ASPECT RATIO:
+3:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Gentle swing 2° on hover.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-34
+
+FILE NAME:
+badge_premium_match_90.png
+
+FOLDER:
+src/assets/decorations/
+
+USED IN:
+MatchResultPage.tsx score display, CosmicScoreCounter.tsx, AdminMatchesPage.tsx
+
+DESCRIPTION:
+Circular premium badge for 90%+ compatibility — laurel wreath, gold emboss, "Soulmate Tier" feel without literal text requirement.
+
+VISUAL STYLE:
+Spotify Wrapped badge × Apple Fitness award ring.
+
+COLOR THEME:
+Gold laurel, rose inner glow, dark center for % number overlay.
+
+OBJECT DETAILS:
+Wreath circle, tick marks, inner soft glow.
+
+COMPOSITION:
+Circular, number sits center via CSS overlay.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Ring fill clockwise on score count-up.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-35
+
+FILE NAME:
+deco_divider_constellation_line.png
+
+FOLDER:
+src/assets/decorations/
+
+USED IN:
+Section.tsx borders, SectionHeader.tsx under eyebrow, Footer.tsx top divider
+
+DESCRIPTION:
+Thin horizontal divider made of tiny stars connected by gold thread — separates marketing sections elegantly.
+
+VISUAL STYLE:
+Cosmic minimal line art.
+
+COLOR THEME:
+Gold line, white stars at 60% opacity.
+
+OBJECT DETAILS:
+5 stars, connecting curve.
+
+COMPOSITION:
+Wide thin strip 1200×40.
+
+ASPECT RATIO:
+12:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Stars twinkle on viewport enter.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-36
+
+FILE NAME:
+deco_floating_blob_gold.png
+
+FOLDER:
+src/assets/decorations/
+
+USED IN:
+GradientBlobs.tsx (replace CSS blob-gold), Hero.tsx accents
+
+DESCRIPTION:
+Soft organic gold blob with feathered edges for layering under glass cards — more art-directed than CSS gradient circle.
+
+VISUAL STYLE:
+Arc Browser ambient orbs.
+
+COLOR THEME:
+Gold #eab308 at 15% opacity center.
+
+OBJECT DETAILS:
+Single amorphous shape.
+
+COMPOSITION:
+Off-center blob, large canvas with fade edges.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Existing blobMotion path in GradientBlobs.tsx.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-37
+
+FILE NAME:
+deco_light_flare_gold.png
+
+FOLDER:
+src/assets/decorations/
+
+USED IN:
+CTA.tsx, CosmicCelebrationOverlay.tsx, MatchResultPage score hero
+
+DESCRIPTION:
+Lens flare / anamorphic gold streak for hero moments behind compatibility score.
+
+VISUAL STYLE:
+Apple event lighting.
+
+COLOR THEME:
+Gold white core, transparent falloff.
+
+OBJECT DETAILS:
+Horizontal flare streak, dust specks.
+
+COMPOSITION:
+Wide horizontal.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Opacity pulse 0.6–1.0 slow.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-38
+
+FILE NAME:
+illus_admin_dashboard_command_center.png
+
+FOLDER:
+src/assets/illustrations/admin/
+
+USED IN:
+AdminOverviewPage.tsx, AdminLayout.tsx sidebar header, AdminLoginPage.tsx
+
+DESCRIPTION:
+Abstract admin command center: dashboard panels, waiting pool queue, match history graph — hackathon admin but premium.
+
+VISUAL STYLE:
+Linear admin × dark ops center.
+
+COLOR THEME:
+Zinc dark UI, gold metrics, rose alert dots.
+
+OBJECT DETAILS:
+3 monitor panels, queue list abstract, graph line.
+
+COMPOSITION:
+Isometric desk setup.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Graph line draws on load.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-39
+
+FILE NAME:
+illus_admin_analytics_chart_glow.png
+
+FOLDER:
+src/assets/illustrations/admin/
+
+USED IN:
+AdminAnalyticsPage.tsx, AdminOverviewPage.tsx stat cards background
+
+DESCRIPTION:
+Glowing analytics visualization — bar + line combo showing registrations and match rate. Decorative not data-accurate.
+
+VISUAL STYLE:
+Spotify Wrapped stats × Stripe Sigma.
+
+COLOR THEME:
+Gold bars, violet line, dark grid.
+
+OBJECT DETAILS:
+6 bars, trend line, subtle grid.
+
+COMPOSITION:
+Landscape chart area.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Bars grow on page enter.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-40
+
+FILE NAME:
+empty_state_admin_no_reports.png
+
+FOLDER:
+src/assets/empty-states/
+
+USED IN:
+AdminReportsPage.tsx, AdminLogsPage.tsx when empty
+
+DESCRIPTION:
+Empty inbox tray with peaceful checkmark — no reports pending. Clean admin empty state.
+
+VISUAL STYLE:
+Linear empty states.
+
+COLOR THEME:
+Zinc illustration, mint check accent.
+
+OBJECT DETAILS:
+Tray, check, 1–2 sparkles.
+
+COMPOSITION:
+Centered icon scene.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Check draw stroke.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-41
+
+FILE NAME:
+illus_footer_campus_night_mini.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+Footer.tsx
+
+DESCRIPTION:
+Wide low-height campus skyline silhouette at night with Haruka star logo above — grounding footer visual.
+
+VISUAL STYLE:
+Minimal skyline vector.
+
+COLOR THEME:
+Black buildings, gold window dots, violet sky fade.
+
+OBJECT DETAILS:
+5 building shapes, tiny stars, logo slot center-top.
+
+COMPOSITION:
+Bottom-aligned skyline strip.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes (sky transparent fade to #09090b)
+
+ANIMATION SUGGESTION:
+Window lights random twinkle.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-42
+
+FILE NAME:
+illus_mobile_app_preview_frame.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+DemoPage.tsx, DemoFlowMockUI.tsx, preview/PreviewDashboard.tsx
+
+DESCRIPTION:
+Premium phone mockup showing Haruka match result screen inside device frame — for product demo / hackathon judges.
+
+VISUAL STYLE:
+Apple device frame × YC demo slide.
+
+COLOR THEME:
+Titanium frame, dark UI inside, gold match score visible.
+
+OBJECT DETAILS:
+iPhone-style frame, screen showing match reveal (generic).
+
+COMPOSITION:
+Phone centered slight tilt 8°.
+
+ASPECT RATIO:
+9:19
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Phone float bob; screen content swapped via CSS.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-43
+
+FILE NAME:
+illus_first_date_cafe_scene.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchResultPage date plan card, datePlanner/DateTimelinePanel.tsx, FutureMemoriesSection.tsx
+
+DESCRIPTION:
+Warm illustration of first date café scene — two cups, window light, campus visible outside. Supports 2-hour café block narrative.
+
+VISUAL STYLE:
+Editorial illustration × Hinge date stories.
+
+COLOR THEME:
+Warm amber interior, cool blue window exterior, gold rim light.
+
+OBJECT DETAILS:
+Table, 2 drinks, window, soft figures optional as silhouettes.
+
+COMPOSITION:
+Interior scene horizontal.
+
+ASPECT RATIO:
+16:9
+
+TRANSPARENT BACKGROUND:
+No (interior gradient OK)
+
+ANIMATION SUGGESTION:
+Steam rise from cups subtle loop.
+
+PRIORITY:
+P1
+
+---
+
+ASSET-44
+
+FILE NAME:
+illus_soul_resonance_waves.png
+
+FOLDER:
+src/assets/illustrations/
+
+USED IN:
+MatchingCinematicSection.tsx, UniverseAlignmentSection.tsx, cosmicMatch.ts phases
+
+DESCRIPTION:
+Two soundwave forms syncing into harmonious wave — soul resonance / emotional compatibility visual metaphor.
+
+VISUAL STYLE:
+Apple Music spatial audio art × abstract romance.
+
+COLOR THEME:
+Rose wave left, violet wave right, gold merge center.
+
+OBJECT DETAILS:
+Dual waveforms, merge point glow.
+
+COMPOSITION:
+Horizontal symmetric.
+
+ASPECT RATIO:
+21:9
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Waves phase-align loop; Lottie candidate.
+
+PRIORITY:
+P2
+
+---
+
+ASSET-45
+
+FILE NAME:
+texture_glassmorphism_noise.png
+
+FOLDER:
+src/assets/patterns/
+
+USED IN:
+index.css .glass utilities overlay, GlassCard.tsx, admin cards, MatchResultPage glass panels
+
+DESCRIPTION:
+Ultra-light noise texture specifically for glass card overlay — prevents banding on dark gradients.
+
+VISUAL STYLE:
+Arc / Linear glass surfaces.
+
+COLOR THEME:
+Monochrome noise 4% opacity.
+
+OBJECT DETAILS:
+Tileable noise only.
+
+COMPOSITION:
+512×512 tile.
+
+ASPECT RATIO:
+1:1
+
+TRANSPARENT BACKGROUND:
+Yes
+
+ANIMATION SUGGESTION:
+Static.
+
+PRIORITY:
+P1
+
+---
+
+================================================================================
+PRIORITY SUMMARY
+
+P0 (ship first — defines premium feel):
+ASSET-01, 06, 09, 10, 15, 16, 17, 18, 20, 21, 23, 26, 31, 32
+
+P1 (high impact enhancement):
+ASSET-02, 04, 05, 07, 08, 11, 12, 14, 19, 22, 24, 27, 28, 29, 33, 34, 42, 43, 45
+
+P2 (polish layer):
+ASSET-03, 13, 25, 30, 35, 36, 37, 38, 39, 40, 41, 44
+
+================================================================================
+COMPONENTS SCANNED (no assets today — CSS/Lucide/emoji placeholders)
+
+Marketing: Hero, ProblemSection, SolutionSection, HowMatchingWorks, DemoFlowSection,
+FeatureGrid, MatchScoreEngine, MatchingCinematicSection, CompatibilityDNASection,
+UniverseAlignmentSection, ProductPreview, StudentMatchPreview, FutureMemoriesSection,
+CTA, AnnouncementBar, Footer, GradientBlobs, PageShell
+
+Matching overlays: FindMatchOverlay, FindMatchButton, CosmicCelebrationOverlay,
+DNAHelix, FloatingParticles, ConfettiBurst, HeartParticleBurst, MatchProfileCard
+
+Member app: AuthLayout, LoginPage, SignupPage, CreateProfilePage, MatchPage,
+MatchResultPage, ProfilePage, DateSchedulePicker, MeetupSafetyCard, UserGuard
+
+Admin: AdminLayout, AdminOverviewPage, AdminUsersPage, AdminWaitingPage,
+AdminMatchesPage, AdminAnalyticsPage, AdminReportsPage, AdminLogsPage, AdminLoginPage
+
+Secondary: DemoPage, AboutPage, FaqPage, PreviewDashboard components,
+DatePlanner/* (dormant on homepage but present), JourneyTimeline/* (dormant)
+
+================================================================================
+NEXT STEP
+
+Do NOT implement in code until all assets are created and placed in folders above.
+
+When complete, tell the agent: "All assets are done."
+
+Then note-v2.txt will map each asset → React component with sizing, opacity, lazy-load,
+and implementation phases.
+
+================================================================================
+END note-v1.txt

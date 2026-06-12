@@ -1,0 +1,266 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum UserStatus {
+  INCOMPLETE_PROFILE
+  WAITING_FOR_MATCH
+  MATCHING
+  MATCHED
+  PAUSED
+  BANNED
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  NON_BINARY
+  OTHER
+}
+
+enum MatchStatus {
+  PENDING_PLAN
+  PLAN_GENERATED
+  REVEALED
+  EXPIRED
+  CANCELLED
+}
+
+enum ReportSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum ReportStatus {
+  PENDING
+  WARNED
+  SUSPENDED
+  BANNED
+  DISMISSED
+}
+
+enum LogType {
+  REGISTRATION
+  MATCH
+  BAN
+  REPORT
+  DELETE
+  CRON
+  ERROR
+  PROFILE_UPDATE
+}
+
+model User {
+  id                 String     @id @default(cuid())
+  email              String?    @unique
+  passwordHash       String?
+  profileComplete    Boolean    @default(true)
+  profilePicture     String?
+  name               String
+  age                Int
+  gender             Gender
+  interestedGender   Gender[]
+  university         String
+  faculty            String
+  course             String
+  year               String
+  personalityType    String
+  datingGoal         String
+  comfortLevel       String
+  relationshipPace   String
+  loveLanguage       String
+  musicTaste         String[]
+  foodPreference     String
+  budgetPreference   String
+  cgpa               String     @default("Prefer not to say")
+  languages          String[]   @default([])
+  outdoorPerson      String     @default("Sometimes")
+  allergies          String     @default("None")
+  socialBattery      String
+  preferredMeetingStyle String
+  dealBreakers       String[]
+  redFlags           String[]
+  greenFlags         String[]
+  location           String
+  role               UserRole   @default(USER)
+  status             UserStatus @default(INCOMPLETE_PROFILE)
+  isActive           Boolean    @default(true)
+  bannedAt           DateTime?
+  banReason          String?
+  waitingSince       DateTime   @default(now())
+  lastScanAt         DateTime?
+  priorityScore      Float      @default(0)
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+
+  interests          Interest[]
+  availability       Availability[]
+  matchesAsUserA     Match[]    @relation("MatchUserA")
+  matchesAsUserB     Match[]    @relation("MatchUserB")
+  soulmateSessionsA  SoulmateSession[] @relation("SessionUserA")
+  soulmateSessionsB  SoulmateSession[] @relation("SessionUserB")
+  blockedBy          BlockedUser[] @relation("BlockedUser")
+  blockedUsers       BlockedUser[] @relation("BlockerUser")
+  reportsMade        Report[]   @relation("Reporter")
+  reportsReceived    Report[]   @relation("ReportedUser")
+  notifications      Notification[]
+  systemLogs         SystemLog[]
+
+  @@index([status])
+  @@index([university])
+  @@index([createdAt])
+}
+
+model Interest {
+  id        String   @id @default(cuid())
+  userId    String
+  label     String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([label])
+}
+
+model Availability {
+  id        String   @id @default(cuid())
+  userId    String
+  day       String
+  timeSlot  String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Match {
+  id                  String      @id @default(cuid())
+  userAId             String
+  userBId             String
+  compatibilityScore  Float
+  aiReason            String
+  status              MatchStatus @default(PENDING_PLAN)
+  successRate         Float?
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+
+  userA               User        @relation("MatchUserA", fields: [userAId], references: [id])
+  userB               User        @relation("MatchUserB", fields: [userBId], references: [id])
+  soulmateSession     SoulmateSession?
+  datePlan            DatePlan?
+  conversationStarters ConversationStarter[]
+
+  @@unique([userAId, userBId])
+  @@index([compatibilityScore])
+  @@index([createdAt])
+}
+
+model SoulmateSession {
+  id                  String   @id @default(cuid())
+  matchId             String   @unique
+  userAId             String
+  userBId             String
+  compatibilityScore  Float
+  aiReason            String
+  celebrationShown    Boolean  @default(false)
+  createdAt           DateTime @default(now())
+
+  match               Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  userA               User     @relation("SessionUserA", fields: [userAId], references: [id])
+  userB               User     @relation("SessionUserB", fields: [userBId], references: [id])
+}
+
+model DatePlan {
+  id                String    @id @default(cuid())
+  matchId           String    @unique
+  templateId        String?
+  title             String
+  location          String
+  time              String
+  budget            String
+  vibe              String
+  timeline          Json
+  scheduledDate     DateTime?
+  timeStart         String?
+  timeEnd           String?
+  scheduleConfirmed Boolean   @default(false)
+  createdAt         DateTime  @default(now())
+
+  match       Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+}
+
+model ConversationStarter {
+  id        String   @id @default(cuid())
+  matchId   String
+  text      String
+  category  String
+  match     Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+
+  @@index([matchId])
+}
+
+model BlockedUser {
+  id          String   @id @default(cuid())
+  blockerId   String
+  blockedId   String
+  createdAt   DateTime @default(now())
+
+  blocker     User     @relation("BlockerUser", fields: [blockerId], references: [id], onDelete: Cascade)
+  blocked     User     @relation("BlockedUser", fields: [blockedId], references: [id], onDelete: Cascade)
+
+  @@unique([blockerId, blockedId])
+}
+
+model Report {
+  id            String         @id @default(cuid())
+  reporterId    String
+  reportedId    String
+  reason        String
+  severity      ReportSeverity @default(MEDIUM)
+  status        ReportStatus   @default(PENDING)
+  createdAt     DateTime       @default(now())
+  resolvedAt    DateTime?
+
+  reporter      User           @relation("Reporter", fields: [reporterId], references: [id])
+  reported      User           @relation("ReportedUser", fields: [reportedId], references: [id])
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model SystemLog {
+  id        String   @id @default(cuid())
+  type      LogType
+  message   String
+  metadata  Json?
+  userId    String?
+  createdAt DateTime @default(now())
+
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([type])
+  @@index([createdAt])
+}
