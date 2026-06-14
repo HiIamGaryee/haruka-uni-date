@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart } from 'lucide-react'
+import { Logo } from './Logo'
 
 const footerLinks = [
   { label: 'About', to: '/about' },
@@ -24,12 +24,7 @@ export function Footer() {
         </nav>
 
         <div className="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-          <Link to="/" className="flex items-center gap-2.5">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-accent/15 text-accent">
-              <Heart className="size-3.5" />
-            </span>
-            <span className="font-display text-sm font-bold sm:text-base">Haruka Uni Date</span>
-          </Link>
+          <Logo imageClassName="h-8 sm:h-9" />
           <p className="text-center text-xs text-muted sm:text-sm">
             Static prototype · No backend · Hackathon-ready
           </p>

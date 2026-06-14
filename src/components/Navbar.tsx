@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useScroll, useMotionValueEvent } from 'framer-motion'
-import { Heart } from 'lucide-react'
 import { Button } from './Button'
+import { Logo } from './Logo'
 import { useAuth } from '../hooks/useAuth'
 import { cn } from '../lib/cn'
 
@@ -26,17 +25,7 @@ export function Navbar() {
       )}
     >
       <div className="section-container flex h-14 items-center justify-between gap-6 sm:h-16">
-        <Link
-          to="/"
-          className="group flex min-w-0 shrink-0 items-center gap-2.5 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
-        >
-          <span className="flex size-9 items-center justify-center rounded-xl bg-accent/15 text-accent transition-colors group-hover:bg-accent/20 sm:size-10">
-            <Heart className="size-4 fill-accent/20 sm:size-[18px]" />
-          </span>
-          <span className="font-display text-base font-bold tracking-tight sm:text-lg">
-            Haruka
-          </span>
-        </Link>
+        <Logo />
 
         <div className="flex shrink-0 items-center">
           {!loading && (

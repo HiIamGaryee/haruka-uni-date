@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { CosmicCelebrationOverlay } from './components/cosmos/CosmicCelebrationOverlay'
 import { FindMatchOverlay } from './components/matching/FindMatchOverlay'
+import { RouteOverlayReset } from './components/RouteOverlayReset'
 import { ScrollToTop } from './components/ScrollToTop'
 import { AuthProvider } from './context/AuthProvider'
 import { MatchingProvider } from './context/MatchingProvider'
@@ -32,6 +33,7 @@ export default function App() {
       <AuthProvider>
         <MatchingProvider>
           <ScrollToTop />
+          <RouteOverlayReset />
           <FindMatchOverlay />
           <CosmicCelebrationOverlay />
           <Routes>
@@ -62,6 +64,7 @@ export default function App() {
                 <Route path="logs" element={<AdminLogsPage />} />
               </Route>
             </Route>
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </MatchingProvider>
       </AuthProvider>

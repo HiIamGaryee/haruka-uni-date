@@ -5,11 +5,13 @@ import {
   overallScore,
   signalScores,
 } from '../data/matchScore'
+import { decorationAssets } from '../data/visualAssets'
 import { easeOut } from '../lib/motion'
 import { FindMatchButton } from './matching/FindMatchButton'
 import { ScoreProgressBar } from './ScoreProgressBar'
 import { SectionHeader } from './SectionHeader'
 import { Section } from './Section'
+import { AssetImage } from './visual/AssetImage'
 
 export function MatchScoreEngine() {
   return (
@@ -51,12 +53,17 @@ export function MatchScoreEngine() {
         </div>
 
         <div className="grid gap-8 p-5 sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-10">
-          <div className="flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
+          <div className="relative flex flex-col items-center justify-center text-center lg:items-start lg:text-left">
             <p className="text-xs font-semibold uppercase tracking-widest text-dim">
               Overall Match
             </p>
             <div className="relative my-4 flex size-36 items-center justify-center sm:size-40">
-              <svg className="absolute inset-0 -rotate-90" viewBox="0 0 100 100">
+              <AssetImage
+                asset={decorationAssets.glassPlatform}
+                animate="float-slow"
+                className="pointer-events-none absolute bottom-0 left-1/2 z-0 w-[min(70vw,200px)] -translate-x-1/2 translate-y-1/3 opacity-50"
+              />
+              <svg className="absolute inset-0 z-10 -rotate-90" viewBox="0 0 100 100">
                 <circle
                   cx="50"
                   cy="50"
@@ -89,7 +96,7 @@ export function MatchScoreEngine() {
                   </linearGradient>
                 </defs>
               </svg>
-              <div>
+              <div className="relative z-10">
                 <p className="font-display text-4xl font-bold text-gradient-spectrum sm:text-5xl">
                   {overallScore}%
                 </p>

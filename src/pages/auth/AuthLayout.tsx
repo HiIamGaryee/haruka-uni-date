@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Logo } from '../../components/Logo'
 
 type AuthLayoutProps = {
   title: string
@@ -20,9 +20,7 @@ export function AuthLayout({ title, subtitle, children, footer }: AuthLayoutProp
         animate={{ opacity: 1, y: 0 }}
         className="relative z-10 w-full max-w-md"
       >
-        <Link to="/" className="mb-8 inline-block font-display text-lg font-bold text-gradient-gold">
-          Haruka Uni Date
-        </Link>
+        <Logo className="mb-8" imageClassName="h-10 sm:h-11" />
         <div className="glass-strong rounded-[28px] p-8">
           <h1 className="font-display text-2xl font-bold">{title}</h1>
           <p className="mt-2 text-sm text-muted">{subtitle}</p>

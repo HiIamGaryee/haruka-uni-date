@@ -1,6 +1,7 @@
-import { Navigate } from 'react-router-dom'
+import { Navigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
+  ArrowLeft,
   GraduationCap,
   Heart,
   LogOut,
@@ -69,8 +70,15 @@ export function ProfilePage() {
 
       <header className="relative border-b border-white/[0.05] bg-bg/30 backdrop-blur-xl">
         <div className="mx-auto flex max-w-lg items-center justify-between px-4 py-4 sm:px-6">
-          <div className="text-center sm:text-left">
-            <p className="flex items-center justify-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-white/35 sm:justify-start">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1.5 text-sm text-white/45 transition hover:text-accent"
+          >
+            <ArrowLeft className="size-4" />
+            Home
+          </Link>
+          <div className="text-center">
+            <p className="flex items-center justify-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-white/35">
               <Sparkles className="size-3 text-accent/80" />
               your space
             </p>

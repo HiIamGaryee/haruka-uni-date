@@ -1,0 +1,238 @@
+HARUKA UNI DATE — ASSET INTEGRATION v2
+Remaining tasks only. Completed integrations removed.
+
+================================================================================
+
+ASSET-01
+FILE: src/assets/backgrounds/bg_hero_university_night.png
+TARGET: Hero.tsx, PageShell.tsx
+STATUS: MISSING_ASSET
+
+ASSET-02
+FILE: src/assets/patterns/bg_section_noise_gradient.png
+TARGET: Section.tsx, PageShell.tsx
+STATUS: MISSING_ASSET
+
+ASSET-03
+FILE: src/assets/patterns/pattern_dot_grid_gold.png
+TARGET: ProblemSection.tsx, SolutionSection.tsx, HowMatchingWorks.tsx
+STATUS: MISSING_ASSET
+
+ASSET-04
+FILE: src/assets/patterns/overlay_glass_shimmer.png
+TARGET: GlassCard.tsx, CTA.tsx, AuthLayout.tsx
+STATUS: MISSING_ASSET
+
+ASSET-05
+FILE: src/assets/illustrations/illus_problem_broken_swipe.png
+TARGET: ProblemSection.tsx
+STATUS: MISSING_ASSET
+
+ASSET-06
+FILE: src/assets/illustrations/illus_solution_privacy_match.png
+TARGET: SolutionSection.tsx
+STATUS: MISSING_ASSET
+
+ASSET-07
+FILE: src/assets/illustrations/illus_how_matching_four_steps.png
+TARGET: HowMatchingWorks.tsx
+STATUS: MISSING_ASSET
+
+ASSET-08
+FILE: src/assets/illustrations/illus_demo_flow_product_journey.png
+TARGET: DemoFlowSection.tsx, DemoFlowStepCard.tsx
+STATUS: MISSING_ASSET
+
+ASSET-09
+FILE: src/assets/illustrations/illus_ai_match_engine_core.png
+TARGET: MatchScoreEngine.tsx, MatchingCinematicSection.tsx
+STATUS: MISSING_ASSET
+
+ASSET-10
+FILE: src/assets/illustrations/illus_compatibility_dna_helix.png
+TARGET: CompatibilityDNASection.tsx
+STATUS: MISSING_ASSET
+
+ASSET-11
+FILE: src/assets/illustrations/illus_universe_alignment_constellation.png
+TARGET: UniverseAlignmentSection.tsx, UniverseAlignmentCanvas.tsx
+STATUS: MISSING_ASSET
+
+ASSET-12
+FILE: src/assets/illustrations/illus_product_preview_campus_cards.png
+TARGET: ProductPreview.tsx, StudentMatchPreview.tsx
+STATUS: MISSING_ASSET
+
+ASSET-13
+FILE: src/assets/illustrations/illus_future_memories_polaroid.png
+TARGET: FutureMemoriesSection.tsx, MemoryCard.tsx
+STATUS: MISSING_ASSET
+
+ASSET-14
+FILE: src/assets/illustrations/illus_cta_start_matching.png
+TARGET: CTA.tsx
+STATUS: MISSING_ASSET
+
+ASSET-15
+FILE: src/assets/illustrations/illus_find_match_overlay_scan.png
+TARGET: FindMatchOverlay.tsx, FindMatchButton.tsx
+STATUS: MISSING_ASSET
+
+ASSET-16
+FILE: src/assets/illustrations/illus_cosmic_celebration_burst.png
+TARGET: CosmicCelebrationOverlay.tsx, CosmicCelebrateButton.tsx
+STATUS: MISSING_ASSET
+
+ASSET-17
+FILE: src/assets/illustrations/illus_partner_reveal_dual_profiles.png
+TARGET: MatchResultPage.tsx, CosmicCelebrationOverlay.tsx
+STATUS: MISSING_ASSET
+
+ASSET-18
+FILE: src/assets/illustrations/illus_date_plan_three_hour_timeline.png
+TARGET: MatchResultPage.tsx, DateSchedulePicker.tsx
+STATUS: MISSING_ASSET
+
+ASSET-19
+FILE: src/assets/illustrations/illus_conversation_starters_bubbles.png
+TARGET: MatchResultPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-20
+FILE: src/assets/illustrations/illus_safety_public_meetup.png
+TARGET: MeetupSafetyCard.tsx
+STATUS: MISSING_ASSET
+
+ASSET-21
+FILE: src/assets/illustrations/illus_waiting_pool_mystery.png
+TARGET: MatchPage.tsx, ProfilePage.tsx, AdminWaitingPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-22
+FILE: src/assets/illustrations/illus_no_match_yet.png
+TARGET: MatchPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-23
+FILE: src/assets/illustrations/illus_match_engine_loading_particles.png
+TARGET: MatchPage.tsx, UserGuard.tsx, FindMatchOverlay.tsx
+STATUS: MISSING_ASSET
+
+ASSET-24
+FILE: src/assets/backgrounds/bg_auth_campus_blur.png
+TARGET: AuthLayout.tsx
+STATUS: MISSING_ASSET
+
+ASSET-25
+FILE: src/assets/illustrations/illus_create_profile_campus_form.png
+TARGET: CreateProfilePage.tsx, SignupPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-26
+FILE: src/assets/avatars/avatar_placeholder_female_01.png
+TARGET: StudentMatchCard.tsx, MatchProfileCard.tsx, MatchResultPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-27
+FILE: src/assets/avatars/avatar_placeholder_male_01.png
+TARGET: StudentMatchCard.tsx, MatchProfileCard.tsx, MatchResultPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-28
+FILE: src/assets/avatars/avatar_placeholder_female_02.png
+TARGET: StudentMatchPreview.tsx, demo cards
+STATUS: MISSING_ASSET
+
+ASSET-29
+FILE: src/assets/avatars/avatar_placeholder_neutral_01.png
+TARGET: CreateProfilePage.tsx, ProfilePage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-30
+FILE: src/assets/avatars/avatar_placeholder_female_03.png
+TARGET: FutureMemoriesSection.tsx
+STATUS: MISSING_ASSET
+
+ASSET-31
+FILE: src/assets/avatars/avatar_placeholder_silhouette_private.png
+TARGET: MatchPage.tsx, waiting pool UI
+STATUS: MISSING_ASSET
+
+ASSET-32
+FILE: src/assets/icons/icon_pack_haruka_custom_24.svg
+TARGET: FeatureGrid.tsx, favicon source variants
+STATUS: MISSING_ASSET
+
+ASSET-33
+FILE: src/assets/decorations/badge_demo_only_ribbon.png
+TARGET: StudentMatchPreview.tsx, ProductPreview.tsx
+STATUS: MISSING_ASSET
+
+ASSET-34
+FILE: src/assets/decorations/badge_premium_match_90.png
+TARGET: MatchResultPage.tsx, CosmicScoreCounter.tsx
+STATUS: MISSING_ASSET
+
+ASSET-35
+FILE: src/assets/decorations/deco_divider_constellation_line.png
+TARGET: Section.tsx, SectionHeader.tsx, Footer.tsx
+STATUS: MISSING_ASSET
+
+ASSET-36
+FILE: src/assets/decorations/deco_sparkle_particle_sheet.png
+TARGET: FloatingParticles.tsx, ConfettiBurst.tsx
+STATUS: MISSING_ASSET
+
+ASSET-37
+FILE: src/assets/illustrations/illus_admin_command_center.png
+TARGET: AdminLayout.tsx, AdminOverviewPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-38
+FILE: src/assets/illustrations/illus_admin_analytics_chart.png
+TARGET: AdminAnalyticsPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-39
+FILE: src/assets/illustrations/illus_admin_empty_reports.png
+TARGET: AdminReportsPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-40
+FILE: src/assets/illustrations/illus_footer_campus_skyline.png
+TARGET: Footer.tsx
+STATUS: MISSING_ASSET
+
+ASSET-41
+FILE: src/assets/illustrations/illus_about_haruka_story.png
+TARGET: AboutPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-42
+FILE: src/assets/illustrations/illus_faq_campus_help.png
+TARGET: FaqPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-43
+FILE: src/assets/decorations/deco_phone_mockup_frame.png
+TARGET: ProductPreview.tsx, DemoPage.tsx
+STATUS: MISSING_ASSET
+
+ASSET-44
+FILE: src/assets/illustrations/illus_date_planner_timeline_rich.png
+TARGET: DatePlanner/* (dormant)
+STATUS: MISSING_ASSET
+
+ASSET-45
+FILE: src/assets/decorations/deco_cosmic_light_flare.png
+TARGET: CosmicCelebrationOverlay.tsx, UniverseAlignmentSection.tsx
+STATUS: MISSING_ASSET
+
+================================================================================
+COMPLETED (removed from active queue):
+- Brand logo: src/assets/branding/logo.png → Logo.tsx, Navbar, Footer, AuthLayout
+- Favicon pack: public/favicon_io/* → index.html
+- Glass platform: src/assets/decorations/glass_platform.png → Hero, MatchScoreEngine, CTA
+
+================================================================================
+END note-v2.txt
