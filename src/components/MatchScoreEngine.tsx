@@ -5,13 +5,12 @@ import {
   overallScore,
   signalScores,
 } from '../data/matchScore'
-import { decorationAssets } from '../data/visualAssets'
 import { easeOut } from '../lib/motion'
 import { FindMatchButton } from './matching/FindMatchButton'
 import { ScoreProgressBar } from './ScoreProgressBar'
 import { SectionHeader } from './SectionHeader'
 import { Section } from './Section'
-import { AssetImage } from './visual/AssetImage'
+import { DecorativeAsset } from './visual/DecorativeAsset'
 
 export function MatchScoreEngine() {
   return (
@@ -58,11 +57,7 @@ export function MatchScoreEngine() {
               Overall Match
             </p>
             <div className="relative my-4 flex size-36 items-center justify-center sm:size-40">
-              <AssetImage
-                asset={decorationAssets.glassPlatform}
-                animate="float-slow"
-                className="pointer-events-none absolute bottom-0 left-1/2 z-0 w-[min(70vw,200px)] -translate-x-1/2 translate-y-1/3 opacity-50"
-              />
+              <DecorativeAsset placementId="match-engine-score" />
               <svg className="absolute inset-0 z-10 -rotate-90" viewBox="0 0 100 100">
                 <circle
                   cx="50"

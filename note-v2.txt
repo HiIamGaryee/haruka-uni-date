@@ -1,5 +1,5 @@
 HARUKA UNI DATE — ASSET INTEGRATION v2
-Remaining tasks only. Completed integrations removed.
+Remaining tasks only (image files not yet in repo).
 
 ================================================================================
 
@@ -227,12 +227,6 @@ ASSET-45
 FILE: src/assets/decorations/deco_cosmic_light_flare.png
 TARGET: CosmicCelebrationOverlay.tsx, UniverseAlignmentSection.tsx
 STATUS: MISSING_ASSET
-
-================================================================================
-COMPLETED (removed from active queue):
-- Brand logo: src/assets/branding/logo.png → Logo.tsx, Navbar, Footer, AuthLayout
-- Favicon pack: public/favicon_io/* → index.html
-- Glass platform: src/assets/decorations/glass_platform.png → Hero, MatchScoreEngine, CTA
 
 ================================================================================
 END note-v2.txt

@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import { heroContent, heroStats } from '../data/homepage'
-import { decorationAssets } from '../data/visualAssets'
 import { fadeUpDelayed } from '../lib/motion'
 import { FindMatchButton } from './matching/FindMatchButton'
 import { Button } from './Button'
 import { GlassCard } from './GlassCard'
-import { AssetImage } from './visual/AssetImage'
+import { DecorativeAsset } from './visual/DecorativeAsset'
 
 export function Hero() {
   return (
@@ -52,11 +51,7 @@ export function Hero() {
           </div>
 
           <motion.div {...fadeUpDelayed(0.32)} className="relative">
-            <AssetImage
-              asset={decorationAssets.glassPlatform}
-              animate="float"
-              className="pointer-events-none absolute -bottom-6 left-1/2 z-0 w-[min(72vw,220px)] -translate-x-1/2 opacity-55 sm:w-[240px]"
-            />
+            <DecorativeAsset placementId="hero-stats" />
             <GlassCard strong className="relative z-10 glow-accent p-5 sm:p-6">
               <p className="mb-4 font-mono text-xs text-dim">haruka.match</p>
               <div className="grid grid-cols-2 gap-3">

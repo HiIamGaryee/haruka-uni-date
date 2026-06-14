@@ -2,13 +2,12 @@ import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import { ctaContent } from '../data/homepage'
-import { decorationAssets } from '../data/visualAssets'
 import { easeOut } from '../lib/motion'
 import { Button } from './Button'
 import { GlassCard } from './GlassCard'
 import { Section } from './Section'
 import { cn } from '../lib/cn'
-import { AssetImage } from './visual/AssetImage'
+import { DecorativeAsset } from './visual/DecorativeAsset'
 
 type CTAAction = {
   label: string
@@ -41,11 +40,7 @@ export function CTA({
   return (
     <Section id={id} className={cn('pb-20 sm:pb-24 lg:pb-28', className)}>
       <GlassCard strong hover={false} className="relative overflow-hidden p-8 text-center sm:p-12 lg:p-14 glow-accent">
-        <AssetImage
-          asset={decorationAssets.glassPlatform}
-          animate="float-slow"
-          className="pointer-events-none absolute -bottom-10 left-1/2 z-0 w-[min(60vw,180px)] -translate-x-1/2 opacity-35"
-        />
+        <DecorativeAsset placementId="cta-glow" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-violet-500/8" />
         <div className="pointer-events-none absolute -right-24 -top-24 size-72 rounded-full bg-accent/12 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -left-24 size-72 rounded-full bg-violet-500/10 blur-3xl" />
