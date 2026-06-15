@@ -4,8 +4,8 @@ export const announcement = {
 } as const
 
 export const heroContent = {
-  eyebrow: 'University Student Matching · Prototype 2026',
-  title: 'Find your uni match, not just another random swipe.',
+  eyebrow: 'University Student Matching',
+  title: 'Find your match, not just another random swipe.',
   subtitle:
     'Haruka Uni Date helps students discover compatible people through interests, course life, campus routine, and AI-generated first-date plans.',
   ctaPrimary: { label: 'Start Matching', to: '/register' },
