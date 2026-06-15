@@ -3,8 +3,8 @@ import { Logo } from './Logo'
 
 const footerLinks = [
   { label: 'About', to: '/about' },
-  { label: 'FAQ', to: '/faq' },
-  { label: 'Demo', to: '/demo' },
+  { label: 'FAQ', to: '/faq' }
+  // { label: 'Demo', to: '/demo' },
 ] as const
 
 export function Footer() {

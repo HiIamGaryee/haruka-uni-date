@@ -30,7 +30,7 @@ export function FaqPage() {
         title="Still curious?"
         subtitle="Read about the team behind Haruka or jump into the live product demo."
         primary={{ label: 'About Us', to: '/about' }}
-        secondary={{ label: 'View Demo', to: '/demo' }}
+        secondary={{ label: 'Login', to: '/login' }}
       />
     </SiteLayout>
   )

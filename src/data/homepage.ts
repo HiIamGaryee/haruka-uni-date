@@ -9,7 +9,7 @@ export const heroContent = {
   subtitle:
     'Haruka Uni Date helps students discover compatible people through interests, course life, campus routine, and AI-generated first-date plans.',
   ctaPrimary: { label: 'Start Matching', to: '/register' },
-  ctaSecondary: { label: 'View Demo', to: '/demo' },
+  ctaSecondary: { label: 'Login', to: '/login' },
 } as const
 
 export const heroStats = [
@@ -158,5 +158,5 @@ export const ctaContent = {
   subtitle:
     'Create your private profile, enter the waiting pool, and let Haruka reveal one compatible partner — with a first-date plan.',
   ctaPrimary: { label: 'Start Matching', to: '/register' },
-  ctaSecondary: { label: 'View Demo', to: '/demo' },
+  ctaSecondary: { label: 'Login', to: '/login' },
 } as const

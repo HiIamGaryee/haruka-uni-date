@@ -86,7 +86,7 @@ export function AboutPage() {
       <CTA
         title="Want to see Haruka in action?"
         subtitle="Explore the match dashboard demo or head back to the landing page."
-        primary={{ label: 'View Demo', to: '/demo' }}
+        primary={{ label: 'Login', to: '/login' }}
         secondary={{ label: 'Back to Home', to: '/' }}
       />
     </SiteLayout>
