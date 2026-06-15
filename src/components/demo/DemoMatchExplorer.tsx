@@ -4,74 +4,12 @@ import { demoViewers, type DemoViewer } from '../../data/demoViewers'
 import { demoCandidatePool } from '../../data/students'
 import {
   DEMO_MIN_MATCH_SCORE,
-  pickDemoDatePlan,
   rankDemoCandidates,
-  type DemoMatchCandidate,
 } from '../../lib/demoCompatibility'
-import { PreviewDashboard } from '../preview/PreviewDashboard'
 import { StudentMatchCard } from '../StudentMatchCard'
 import { SectionHeader } from '../SectionHeader'
 import { Section } from '../Section'
 import { DemoViewerPicker } from './DemoViewerPicker'
-import { cn } from '../../lib/cn'
-
-function buildDashboardData(viewer: DemoViewer, match: DemoMatchCandidate | null) {
-  if (!match?.eligible) {
-    return null
-  }
-
-  const plan = pickDemoDatePlan(viewer, match.student, match.sharedInterests)
-
-  return {
-    profile: {
-      name: viewer.name.split(' ')[0],
-      initials: viewer.name
-        .split(' ')
-        .map((p) => p[0])
-        .join('')
-        .slice(0, 2)
-        .toUpperCase(),
-      university: viewer.university,
-      course: viewer.course,
-      interests: viewer.interests,
-      status: 'Waiting pool · match found',
-    },
-    match: {
-      partnerName: match.student.name,
-      compatibility: match.breakdown.total,
-      sharedInterests: match.sharedInterests,
-      metrics: [
-        {
-          key: 'sameUni',
-          label: 'Same Uni',
-          value: 'Yes',
-          icon: 'graduation' as const,
-        },
-        {
-          key: 'sharedInterests',
-          label: 'Shared Tags',
-          value: String(match.sharedInterests.length || '—'),
-          icon: 'sparkles' as const,
-        },
-        {
-          key: 'dateEnergy',
-          label: 'Date Energy',
-          value: match.student.personalityType.split(' ')[0],
-          icon: 'zap' as const,
-        },
-      ],
-      signalBars: [
-        { label: 'University', value: match.breakdown.university, accent: 'emerald' as const },
-        { label: 'Interests', value: match.breakdown.sharedInterests, accent: 'purple' as const },
-        { label: 'Personality', value: match.breakdown.personality, accent: 'emerald' as const },
-        { label: 'Dating Goals', value: match.breakdown.datingGoals, accent: 'blue' as const },
-        { label: 'Date Plan Fit', value: match.breakdown.lifestyle, accent: 'blue' as const },
-      ],
-    },
-    datePlan: plan,
-  }
-}
-
 export function DemoMatchExplorer() {
   const [viewer, setViewer] = useState<DemoViewer>(demoViewers[0])
   const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -91,11 +29,9 @@ export function DemoMatchExplorer() {
 
   const selected =
     ranked.find((r) => r.student.id === selectedId) ?? bestMatch ?? ranked[0] ?? null
-  const dashboard = buildDashboardData(viewer, selected?.eligible ? selected : bestMatch)
 
   return (
-    <>
-      <Section id="demo-explorer" dots className="border-t-0 pt-0">
+    <Section id="demo-explorer" dots className="border-t-0 pt-0">
         <SectionHeader
           eyebrow="Pick your persona"
           title={
@@ -149,37 +85,6 @@ export function DemoMatchExplorer() {
             her campus.
           </p>
         )}
-      </Section>
-
-      <Section border>
-        <SectionHeader
-          eyebrow="Match dashboard"
-          title={
-            <>
-              {dashboard ? (
-                <>
-                  <span className="text-gradient-gold">{viewer.name.split(' ')[0]}</span> ↔{' '}
-                  {dashboard.match.partnerName.split(' ')[0]}
-                </>
-              ) : (
-                <>No match yet for {viewer.name.split(' ')[0]}</>
-              )}
-            </>
-          }
-          description={
-            dashboard
-              ? 'Profile, compatibility breakdown, and AI date plan — synced to your selection above.'
-              : 'Select an eligible candidate or try Haruka / Kai at Sunway.'
-          }
-          align="center"
-        />
-
-        <div
-          className={cn(!dashboard && 'pointer-events-none opacity-40 grayscale-[0.3]')}
-        >
-          <PreviewDashboard data={dashboard ?? undefined} />
-        </div>
-      </Section>
-    </>
+    </Section>
   )
 }

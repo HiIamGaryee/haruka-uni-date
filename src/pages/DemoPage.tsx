@@ -3,8 +3,6 @@ import { Sparkles } from 'lucide-react'
 import { SiteLayout } from '../components/SiteLayout'
 import { SectionHeader } from '../components/SectionHeader'
 import { DemoMatchExplorer } from '../components/demo/DemoMatchExplorer'
-import { DemoAccountsPanel } from '../components/demo/DemoAccountsPanel'
-import { DemoFlowSection } from '../components/DemoFlowSection'
 import { FindMatchButton } from '../components/matching/FindMatchButton'
 import { CTA } from '../components/CTA'
 import { PageBackLink } from '../components/PageBackLink'
@@ -35,7 +33,7 @@ export function DemoPage() {
                   <span className="text-gradient-spectrum">live on this page.</span>
                 </>
               }
-              description="Switch between Haruka, Kai, and Mei. Scores update in real time — same 90% gate, privacy rules, and date-plan logic as the logged-in app."
+              description="Switch between Haruka, Kai, and Mei. Scores update in real time — same 90% gate and privacy rules as the logged-in app."
             />
           </motion.div>
 
@@ -53,12 +51,6 @@ export function DemoPage() {
         <div className="relative">
           <DemoMatchExplorer />
         </div>
-
-        <Section border>
-          <DemoAccountsPanel />
-        </Section>
-
-        <DemoFlowSection className="border-t-0" hideCta />
 
         <CTA
           title="Ready to try it for real?"

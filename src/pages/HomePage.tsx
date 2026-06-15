@@ -8,6 +8,7 @@ import { UniverseAlignmentSection } from '../components/cosmos/UniverseAlignment
 import { CompatibilityDNASection } from '../components/matching/CompatibilityDNASection'
 import { MatchingCinematicSection } from '../components/matching/MatchingCinematicSection'
 import { MatchScoreEngine } from '../components/MatchScoreEngine'
+import { DatePlannerSection } from '../components/datePlanner/DatePlannerSection'
 import { ProductPreview } from '../components/ProductPreview'
 import { FutureMemoriesSection } from '../components/memories/FutureMemoriesSection'
 import { CTA } from '../components/CTA'
@@ -27,6 +28,7 @@ export function HomePage() {
       <CompatibilityDNASection />
       <UniverseAlignmentSection />
       <ProductPreview />
+      <DatePlannerSection />
       <FutureMemoriesSection />
       <CTA />
     </SiteLayout>
