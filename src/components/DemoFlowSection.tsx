@@ -2,7 +2,7 @@ import { demoFlowContent, demoSteps } from '../data/demoFlow'
 import { DemoFlowStepCard } from './DemoFlowStepCard'
 import { SectionHeader } from './SectionHeader'
 import { Section } from './Section'
-import { Button } from './Button'
+// import { Button } from './Button'
 
 type DemoFlowSectionProps = {
   className?: string
@@ -44,9 +44,9 @@ export function DemoFlowSection({ className, hideCta = false }: DemoFlowSectionP
 
       {!hideCta && (
         <div className="mt-10 flex justify-center">
-          <Button to="/demo" variant="secondary">
+          {/* <Button to="/demo" variant="secondary">
             Open full demo →
-          </Button>
+          </Button> */}
         </div>
       )}
     </Section>
